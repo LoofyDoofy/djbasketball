@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+/* make everything push up to border of screen and for phone view*/
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Montserrat",sans-serif;
+}
+
+/* background image for main part*/
+.maincontain {
+  background-image: url(images/background3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 4px;
+}
+
+/* text for main part*/
+.maintext {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.introcontainer {
+  padding-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.midcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width:84%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color: white;
+}
+
+.middle {
+  background-color: #FFCBA4;
+  padding-bottom: 50px;
+}
+
+/* for hover tooltip on events table*/
+.tooltips {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltips .tooltipstext {
+  visibility: hidden;
+  width: 110px;
+  background-color: black;
+  color: #333;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltips:hover .tooltipstext {
+  visibility: visible;
+}
+
+.tooltips .tooltipstext a{
+  color: white;
+}
+
+.subcontainer {
+  text-align: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.subcontainer iframe {
+  width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #FFA500;
+}

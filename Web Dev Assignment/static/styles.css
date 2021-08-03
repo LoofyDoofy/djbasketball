@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+/* make everything push up to border of screen
+give default words montserrat font
+overflow-x:hidden for mobile view problem
+*/
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Montserrat",sans-serif;
+}
+
+/* main section for index, background image part*/
+.maincontain {
+  background-image: url(images/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+/* words for the main section, in front
+of background image*/
+.maintext {
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-size: 1.1rem;
+}
+
+/* second part for index,
+introduction section*/
+.subcontain {
+    margin-right: 8%;
+    margin-left: 8%;
+    padding: 20px 20px 20px 20px;
+}
+
+/* Styling for border of the textarea*/
+#textbox {
+  border-style: solid;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* spacing for textbox and imagebox when bootstrap
+cause them to be up and down*/
+@media only screen and (max-width: 991px) {
+  #imagebox {
+    margin-top: 20px;
+  }
+}
+
+/* background color styling*/
+.middle {
+  background-color: #FFCBA4;
+  padding-bottom: 20px;
+}
+
+/* introduction container on what basketball is
+styling to allow text to be centered
+translate to reposition element */
+.introcontainer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* whole container for video part*/
+.video {
+  text-align: center;
+  padding-bottom:20px;
+}
+
+/* video scaling part*/
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* video scaling part*/
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+/* video scaling part*/
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer area*/
+footer {
+  background-color: #333;
+  color: white;
+  padding-bottom: 1px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #FFA500;
+}

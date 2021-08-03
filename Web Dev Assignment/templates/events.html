@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basketball Club</title>
+    <link rel="stylesheet" href="../static/styles3.css">
+    <link rel="stylesheet" href="../static/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lora:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <header>
+      <nav class="navbar">
+        <div class="brand-title align-self-start">DJ Basketball</div>
+        <a href="#" class="toggle-button">
+          <span class="bars"></span>
+          <span class="bars"></span>
+          <span class="bars"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="#" class="current">Events</a></li>
+            <li><a href="askme.html">Ask Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <div class="maincontain">
+        <div class="maintext">
+          <h2>Events</h2>
+          <div class="row justify-content-md-center">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <p>
+                To learn more about Basketball, one way is to watch the professional players.
+                 With the FIBA Basketball and Olympic games basketball around the corner,
+                below are the dates for you to catch it.
+              </p>
+              <button type="button" name="button" class="btn btn-secondary" onclick=window.location.href="#midcontainer">Learn About the Events</button>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+      </div>
+      <section class="middle">
+        <div class="introcontainer" id="midcontainer">
+          <hr style="height: 10px;"><h1 style="text-align:center; font-family:'Bebas Neue', cursive; padding-top: 5px;">Basketball events in 2021</h1><hr style="height: 10px;">
+        </div>
+        <div class="midcontainer">
+          <table class="table table-bordered table-striped" border="1">
+            <thead><tr><th>No.</th><th>Event Name</th><th>Time Period</th><th>Location</th></tr></thead>
+            <tr><td>1</td><td><div class="tooltips">Olympic Games (Men and Women)<span class="tooltipstext"><a href="https://olympics.com/tokyo-2020/olympic-games/en/results/basketball/olympic-schedule-and-results.htm" target="_blank">Learn More</a></span></div></td><td>23 July- 8 Aug</td><td>Tokyo, Japan</td></tr>
+            <tr><td>2</td><td><div class="tooltips">FIBA Women's U19 World Cup<span class="tooltipstext"><a href="https://www.usab.com/womens/u19.aspx" target="_blank">Learn More</span></div></td><td>7-15 Aug</td><td>Debrecen, Hungary</td></tr>
+            <tr><td>3</td><td><div class="tooltips">FIBA Americas U16 Championship for Men<span class="tooltipstext"><a href="https://www.usab.com/mens/u16.aspx" target="_blank">Learn More</span></div></td><td>10-15 Aug</td><td>Argentina</td></tr>
+            <tr><td>4</td><td><div class="tooltips">FIBA Americas U16 Championship for Women<span class="tooltipstext"><a href="https://www.usab.com/womens/u16.aspx" target="_blank">Learn More</span></div></td><td>16-22 Aug</td><td>Chile</td></tr>
+            <tr><td>5</td><td><div class="tooltips">FIBA 3x3 AmeriCup (Men and Women)<span class="tooltipstext"><a href="http://www.fiba.basketball/news/first-ever-fiba-3x3-americup-coming-to-miami-in-november-2021" target="_blank">Learn More</span></div></td><td>12-14 Nov</td><td>Miami, Florida</td></tr>
+          </table>
+        </div>
+        <div style="margin-left: 5%; margin-right: 5%; padding-bottom: 25px;">
+          <hr style="height: 10px;">
+          <h1 style="text-align:center; font-family: 'Bebas Neue', cursive; padding-top: 5px;">Calendar For Basketball Events</h1>
+          <hr style="height: 10px;">
+        </div>
+        <div class="subcontainer">
+          <iframe src="https://calendar.google.com/calendarembed?height=720&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FSingapore&amp;src=Y2hhbmRpbmdqaWU5MTNAZ21haWwuY29t&amp;src=ODc0ZzcyMDB2NjAwNW04YXV0OWhibm9sMTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=cDljbDcxMGZrZWx2NmJ1bTd2aDJibGhudjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZmlkMXQ2cTkxZ20yMzlkY3VsMGxzZGo4aGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OGQ0OHM1MXFpczVpcDk5NTJodjAwMnBvYzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;color=%23F4511E&amp;color=%23E4C441&amp;color=%230B8043&amp;color=%233F51B5&amp;showPrint=0" style="border:solid 1px #777" width="1280" height="720" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <hr style="height: 10px; margin-left: auto; margin-right: auto; width: 90%">
+      </section>
+      <script type="text/javascript" src="../static/navbar.js"></script>
+    <footer>
+    <p>&copy; 2021 Chan Ding Jie |
+      NYP DSF SF2101, IT1552-01 |
+      Chan Ding Jie 212460X<br>
+      <a href="mailto: chandingjie913@gmail.com">Email</a> | <a href="https://www.instagram.com/nonotojojosbobofishballs" target="_blank">Instagram</a> | <a href="https://www.facebook.com/XyremCell" target="_blank">Facebook</a>
+    </p>
+  </footer>
+  </body>
+</html>
