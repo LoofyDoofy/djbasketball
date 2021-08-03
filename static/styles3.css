@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+/* make everything push up to border of screen and for phone view*/
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: "Montserrat",sans-serif;
+}
+
+/* background image for main part*/
+.maincontain {
+  background-image: url(images/background3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 4px;
+}
+
+/* text for main part*/
+.maintext {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+/* a container for header*/
+.introcontainer {
+  padding-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* background color for middle section*/
+.middle {
+  background-color: #FFCBA4;
+  padding-bottom: 50px;
+}
+
+/* container for table*/
+.midcontainer {
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* for hover tooltip on events table*/
+/* relative to not affect layout,
+inline block so that hover does not cover whole table cell */
+.tooltips {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* tooltip is hidden b4 hovered
+basic styling for the size and color of bg and text*/
+.tooltips .tooltipstext {
+  visibility: hidden;
+  width: 110px;
+  background-color: black;
+  color: #333;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  opacity: 0.7;
+  /* Position the tooltip */
+  position: absolute;
+  /* z-index to allow tooltip to be display top/ overlap other*/
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+/* on hover, text appears*/
+.tooltips:hover .tooltipstext {
+  visibility: visible;
+}
+
+.tooltips .tooltipstext a{
+  color: white;
+}
+
+
+/* container for iframe */
+.subcontainer {
+  text-align: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.subcontainer iframe {
+  width: 100%;
+}
+
+/* footer area*/
+footer {
+  background-color: #333;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #FFA500;
+}

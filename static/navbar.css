@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+/* brand title and some adjustment for alignment*/
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding-left: 4px;
+  padding-top: 2px;
+  font-family: "Lora", serif;
+}
+
+/* making the links slightly bigger*/
+.navbar-links {
+  margin-top:1.1px;
+}
+
+/* removing list-style, the dot for the list
+flex to be side by side*/
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+/* removing blue and underline for link.*/
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+/* for hover effect on navbar links*/
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+/* orange color for current page link*/
+.navbar .current {
+  color: #FFA500;
+}
+
+/* hamburger button section
+postion: absolute to keep hamburger at the top right
+top and right to adjust hamburger, 1.5 rem away from top and right
+display: none is for it to not show before reaching a certain width
+flex direction columm for the span lines to line up on each other*/
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+  margin-top: 1.1px;
+}
+
+/* bar color, bar width and height, to make the bars appear*/
+.toggle-button .bars {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* using media query to allow hamburger to appear after width*/
+@media (max-width: 600px) {
+  /* allowing hamburger to appear*/
+  .toggle-button {
+    display: flex;
+  }
+
+  /* making the dropdown part not visible unless button is pressed */
+  .navbar-links {
+    display:none;
+    width: 100%;
+  }
+
+  /* mainly for brand-title to align to the right
+  and also allow it so that the the brand title line and
+  dropdown is properly stacked up and down with columm
+  but with bootstrap this line is apparently not required*/
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* making the dropdown part be up to down, columm*/
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* allow the links to be align center*/
+  .navbar-links li {
+    text-align: center;
+  }
+
+  /* simple styling for the padding
+  to make space smaller*/
+  .navbar-links li a {
+    padding: .7rem 1rem;
+  }
+  /* for the drop down to work through the javascript active assignment*/
+  .navbar-links.active {
+    display:flex;
+  }
+}

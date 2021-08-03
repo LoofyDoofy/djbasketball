@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basketball Club</title>
+    <link rel="stylesheet" href="../static/styles2.css">
+    <link rel="stylesheet" href="../static/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lora:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <header>
+      <nav class="navbar">
+        <div class="brand-title align-self-start">DJ Basketball</div>
+        <a href="#" class="toggle-button">
+          <span class="bars"></span>
+          <span class="bars"></span>
+          <span class="bars"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#" class="current">People</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="askme.html">Ask Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="maincontain">
+      <div class="maintext">
+        <h2>Famous Players of Basketball</h2>
+        <p>Here are some of the most famous basketball players</p>
+        <button type="button" name="button" class="btn btn-secondary" onclick=window.location.href="#subcontain">Learn About the Players</button>
+      </div>
+    </div>
+    <section class="middle">
+    <div class="subcontain" id="subcontain">
+      <div style="text-align:center; padding-top: 20px; padding-bottom: 6px; margin-left: 5%; margin-right:5%">
+        <hr style="height: 10px;">
+        <h1 style="font-family: 'Bebas Neue', cursive; padding-top:5px;">My Favourites</h1>
+        <hr style="height: 10px;">
+      </div>
+      <!-- Bootstrap Carousel Part-->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <!-- carousel container-->
+        <div class="col-sm-10">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!-- Slides bottom button, the 3 lines to change slides-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- main picture part of carousel each image is in here-->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../static/images/basketballslide1.jpg" class="d-block w-100" alt="Michael Jordan Picture">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../static/images/basketballslide2.jpg" class="d-block w-100" alt="LeBron James Picture" >
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../static/images/basketballslide3.jpg" class="d-block w-100" alt="Stephen Curry">
+              </div>
+            </div>
+            <!-- left button to previous slide-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- right buttton to next slide-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+    <!-- using bootstrap to align items and for responsiveness-->
+    <div class="containerpic" style="text-align:center">
+      <hr style="height: 10px;"><h1 style="font-family: 'Bebas Neue', cursive; padding-top:5px;">Basketball Players</h1><hr style="height: 10px;">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-4" style="display:flex; flex-direction: column;">
+          <div id="one">
+           <img src="../static/images/michaeljordanbio.jpg" alt="" height="350" width="280" style="margin-left:auto; margin-right:auto" >
+           <div class="image__overlay">
+             <div class="image__title">Michael Jordan</div>
+             <a href="https://en.wikipedia.org/wiki/Michael_Jordan" target="_blank">Click to learn more</a>
+           </div>
+         </div>
+          <h4>Michael Jordan</h4>
+        </div>
+        <div class="col-lg-4" style="display:flex; flex-direction: column;">
+          <div id="one">
+           <img src="../static/images/lebronjamesbio.jpg" alt="" height="350" width="280" style="margin-left:auto; margin-right:auto" >
+           <div class="image__overlay">
+             <div class="image__title">Lebron James</div>
+             <a href="https://en.wikipedia.org/wiki/LeBron_James" target="_blank">Click to learn more</a>
+           </div>
+         </div>
+          <h4>Lebron James</h4>
+        </div>
+        <div class="col-lg-4" style="display:flex; flex-direction: column;">
+          <div id="one">
+           <img src="../static/images/stephencurrybio.jpg" alt="" height="350" width="280" style="margin-left:auto; margin-right:auto" >
+           <div class="image__overlay">
+             <div class="image__title">Stephen Curry</div>
+             <a href="https://en.wikipedia.org/wiki/Stephen_Curry" target="_blank">Click to learn more</a>
+           </div>
+         </div>
+          <h4>Stephen Curry</h4>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-lg-4" style="display:flex; flex-direction: column;">
+          <div id="one">
+           <img src="../static/images/shaqbio.jpg" alt="" height="350" width="280" style="margin-left:auto; margin-right:auto" >
+           <div class="image__overlay">
+             <div class="image__title">Shaquille O'Neal</div>
+             <a href="https://en.wikipedia.org/wiki/Shaquille_O%27Neal" target="_blank">Click to learn more</a>
+           </div>
+         </div>
+          <h4>Shaquille O'Neal</h4>
+        </div>
+        <div class="col-lg-4" style="display:flex; flex-direction: column;">
+          <div id="one">
+           <img src="../static/images/kobebryantbio.jpg" alt="" height="350" width="280" style="margin-left:auto; margin-right:auto" >
+           <div class="image__overlay">
+             <div class="image__title">Kobe Bryant</div>
+             <a href="https://en.wikipedia.org/wiki/Kobe_Bryant" target="_blank">Click to learn more</a>
+           </div>
+         </div>
+          <h4>Kobe Bryant</h4>
+        </div>
+        <div class="col-lg-4" style="display:flex; flex-direction: column;">
+          <div id="one">
+           <img src="../static/images/hardenbio.jpg" alt="" height="350" width="280" style="margin-left:auto; margin-right:auto" >
+            <div class="image__overlay">
+              <div class="image__title">James Harden</div>
+              <a href="https://en.wikipedia.org/wiki/James_Harden" target="_blank">Click to learn more</a>
+            </div>
+          </div>
+          <h4>James Harden</h4>
+        </div>
+      </div>
+      <hr style="height: 10px;">
+    </div>
+  </div>
+  </section>
+  <script type="text/javascript" src="../static/navbar.js"></script>
+  <footer>
+    <p>&copy; 2021 Chan Ding Jie |
+      NYP DSF SF2101, IT1552-01 |
+      Chan Ding Jie 212460X<br>
+      <a href="mailto: chandingjie913@gmail.com">Email</a> | <a href="https://www.instagram.com/nonotojojosbobofishballs" target="_blank">Instagram</a> | <a href="https://www.facebook.com/XyremCell" target="_blank">Facebook</a>
+    </p>
+  </footer>
+</body>
+</html>
