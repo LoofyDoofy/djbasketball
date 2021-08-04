@@ -116,7 +116,7 @@
           width="900"
           height="500"
           frameborder="0" style="border:0"
-          src="https://no_you.com" allowfullscreen>
+          src="about:blank" allowfullscreen>
         </iframe>
       </div>
       <div style="padding-top:20px;">
@@ -147,6 +147,7 @@
       document.getElementById("lat1").innerText = position["coords"]["latitude"];
       document.getElementById("long").innerText = position["coords"]["longitude"];
       document.getElementById("long1").innerText = position["coords"]["longitude"];
+      updatemap()
     };
 
     const errorCallback = (error) => {
@@ -156,13 +157,12 @@
       document.getElementById("long1").innerText = "Unknown";
       sessionStorage['pos'] = "1.29016,103.852";
       sessionStorage['WhatsThisAbout'] = "^ Since you denied permission to see your location, we assume you live in CBD.";
+      updatemap()
     };
 
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
       enableHighAccuracy: true
     });
-    updatemap()
-
   }
 
   locationget();
