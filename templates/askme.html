@@ -59,7 +59,7 @@
       </div>
       <div style="padding-bottom:20px;">
         <div class="formcontainer">
-          <form class="row g-3" method="post" action="askmeprocessor.html">
+          <form class="row g-3" method="get" action="askmeprocessor.html">
             <div class="col-md-6">
               <label for="fname">First Name</label>
               <input type="text" class="form-control" name="fname" id="fname" required placeholder="Your name...">
@@ -101,7 +101,7 @@
       </div>
       <div style="margin-left:5%;margin-right:5%;">
         <hr style="height: 10px;">
-        <h1 style="text-align:center; font-family: 'Bebas Neue',cursive; padding-top: 5px;">Others</h1>
+        <h1 style="text-align:center; font-family: 'Bebas Neue',cursive; padding-top: 5px;">Your Location</h1>
         <hr style="height: 10px;">
       </div>
       <div class="geolocatecontainer">
@@ -109,7 +109,8 @@
         <p>Your location's longitude is:<br><span id="long">Unknown</span></p>
         <p><span id="lat1">Unknown</span>, <span id="long1">Unknown</span></p>
         <p>Use <a href="https://geocode.xyz/SG" target="_blank">https://geocode.xyz/SG</a> to search location by copying and entering above latitude and longitude.</p>
-        <button type="button" class="btn btn-primary" id="location-button" onclick="locationget()">Get Location</button>
+        <button type="button" class="btn btn-primary" id="location-button" onclick="locationget()">Get Location for map below</button>
+        <p style="font-size:0.8rem;padding-bottom:0px;">If you do not allow for location, the location will be defaulted*</p>
       </div>
       <div class="mapcontain">
         <iframe id="myembedmap"
@@ -119,12 +120,24 @@
           src="about:blank" allowfullscreen>
         </iframe>
       </div>
+      <div style="margin-left:5%;margin-right:5%;padding-top:30px;">
+        <hr style="height: 10px;">
+        <h1 style="text-align:center; font-family: 'Bebas Neue',cursive; padding-top: 5px;">Basketball Courts Near You</h1>
+        <hr style="height: 10px;">
+      </div>
+      <div class="mapcontain" style="margin-top:50px;">
+        <iframe
+          width="900"
+          height="500"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/search?key=AIzaSyALHka4SsQQg7_Uh6mUqS7WhQhXRbO2tyc&q=basketball+courts+near+me" allowfullscreen>
+        </iframe>
+      </div>
       <div style="padding-top:20px;">
         <hr style="height: 10px;">
       </div>
   </section>
     <script type="text/javascript" src="../static/navbar.js"></script>
-
     <footer>
       <p>&copy; 2021 Chan Ding Jie |
         NYP DSF SF2101, IT1552-01 |
@@ -133,6 +146,7 @@
       </p>
     </footer>
   </body>
+  <!-- script for geolocation and map-->
   <script type="text/javascript">
   function updatemap() {
     var url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyALHka4SsQQg7_Uh6mUqS7WhQhXRbO2tyc"
