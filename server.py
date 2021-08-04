@@ -18,7 +18,6 @@ def people():
 def events():
     return render_template(f"events.html")
 
-
 @app.route("/askme.html")
 def askme():
     return render_template(f"askme.html")
