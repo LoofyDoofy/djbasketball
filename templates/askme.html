@@ -59,7 +59,7 @@
       </div>
       <div style="padding-bottom:20px;">
         <div class="formcontainer">
-          <form class="row g-3" method="get" action="askmeprocessor.html">
+          <form class="row g-3" method="post" action="askmeprocessor.html">
             <div class="col-md-6">
               <label for="fname">First Name</label>
               <input type="text" class="form-control" name="fname" id="fname" required placeholder="Your name...">
@@ -110,6 +110,7 @@
         <p><span id="lat1">Unknown</span>, <span id="long1">Unknown</span></p>
         <p>Use <a href="https://geocode.xyz/SG" target="_blank">https://geocode.xyz/SG</a> to search location by copying and entering above latitude and longitude.</p>
         <button type="button" class="btn btn-primary" id="location-button" onclick="locationget()">Get Location for map below</button>
+        <p style="font-size:0.8rem;">(Location is not always 100% accurate)</p>
         <p style="font-size:0.8rem;padding-bottom:0px;">If you do not allow for location, the location will be defaulted*</p>
       </div>
       <div class="mapcontain">
@@ -126,7 +127,7 @@
         <hr style="height: 10px;">
       </div>
       <div class="mapcontain" style="margin-top:50px;">
-        <iframe
+        <iframe id="around"
           width="900"
           height="500"
           frameborder="0" style="border:0"
@@ -151,7 +152,7 @@
   function updatemap() {
     var url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyALHka4SsQQg7_Uh6mUqS7WhQhXRbO2tyc"
     map = document.getElementById("myembedmap");
-    map.src = url + "&q="+sessionStorage['pos'] + "&zoom=15&center=" + sessionStorage['pos']
+    map.src = url + "&q="+sessionStorage['pos'] + "&zoom=15&center=" + sessionStorage['pos'];
   }
 
   function locationget() {
@@ -161,7 +162,7 @@
       document.getElementById("lat1").innerText = position["coords"]["latitude"];
       document.getElementById("long").innerText = position["coords"]["longitude"];
       document.getElementById("long1").innerText = position["coords"]["longitude"];
-      updatemap()
+      updatemap();
     };
 
     const errorCallback = (error) => {
@@ -171,7 +172,7 @@
       document.getElementById("long1").innerText = "Unknown";
       sessionStorage['pos'] = "1.29016,103.852";
       sessionStorage['WhatsThisAbout'] = "^ Since you denied permission to see your location, we assume you live in CBD.";
-      updatemap()
+      updatemap();
     };
 
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
